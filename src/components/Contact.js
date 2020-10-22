@@ -3,16 +3,18 @@ import './contact.css';
 
 
 const avatar = "https://randomuser.me/api/portraits/lego/2.jpg";
-const name = "Lebron James";
-const isOnline = true;
+const name = "Patrick Mwimanzi";
 
 function Contact () {
     return (
       <article className="Contact">
           <img className="avatar" src={avatar} alt="my profile"/>
-          <div className="name">
+          <div>
             <h2 className="name">{name}</h2>      
-            <button className="status">{isOnline? "Online": "Offline"}</button>
+            <button className="status">
+              <span class="status-online" ></span>
+              <p class="status-text">Online</p>
+            </button>
           </div>
       </article>
 
