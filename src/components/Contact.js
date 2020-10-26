@@ -1,7 +1,7 @@
 import React from 'react';
 import './contact.css';
 import PropTypes from "prop-types";
-
+import React, { useState } from 'react'
 
 function Contact(props) {
   return (
