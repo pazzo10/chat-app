@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Contact from "./Contact";
 
 const users = [
@@ -34,7 +34,7 @@ const users = [
     <div>
       {users.map((user) => (
         <Contact
-          key={user.avatar}
+          key={user.name}
           name={user.name}
           avatar={user.avatar}
           online={user.online}
